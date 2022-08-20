@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Bussiness Family Community</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="header__wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="navbar header__body">
+                    <div class="header__logo"><a href="/">bussiness family <img src="img/Logo.png" alt="logo"></a></div>
+                    <div class="burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu nav" id="nav">
+                        <ul class="menu">
+                            <li style="display: none;"><a class="menu__item-link trigger__link active">
+
+                                </a></li>
+                            <li class="menu__item with__submenu ">
+                                <a class="menu__item-link trigger__link">КЛУБ
+
+                                </a>
+                                <div class="club__submenu submenu1">
+                                    <ul>
+                                        <li>
+                                            <a href="#faces">Росписание </a>
+                                        </li>
+                                        <li>
+                                            <a href="">Партнерство</a>
+                                        </li>
+                                        <li>
+                                            <a href="">Контакты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link trigger__link">СООБЩЕСТВО</a>
+                                <div class="club__submenu">
+                                    <ul>
+                                        <li>
+                                            <a href="#our-goods"> Создатель </a>
+                                        </li>
+                                        <li>
+                                            <a href="#faces"> Клуб в лицах</a>
+                                        </li>
+                                        <li>
+                                            <a href="#slideshow1"> Рекомендации </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item"><a class="menu__item-link trigger__link">МАТЕРИАЛЫ</a>
+                                <div class="club__submenu">
+                                    <ul>
+                                        <li><a href="">Росписание </a></li>
+                                        <li><a href="">Партнерство</a></li>
+                                        <li><a href="">Контакты</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="menu__item partnership"><a href="" class="menu__item-link ">Партнерство</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+    </div>
+    <main>
+        <!-- Creator -->
+        @@include('_creator.html')
+        <!-- Club faces -->
+        @@include('_faces.html')
+        <!-- Slideshow1 -->
+        @@include('_slideshow1.html')
+        <!-- Partnership -->
+        @@include('_partnership.html')
+
+
+    </main>
+
+
+
+    <!-- footer -->
+    @@include('_footer.html')
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+.our-goods {
+    padding-bottom: 300px;
+
+    &__wrapper {
+        max-width: 936px !important;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__container {
+        position: relative;
+        width: 100%;
+        max-width: 936px !important;
+        margin: 0 auto;
+        display: flex;
+        align-items: flex-start;
+        height: 301px;
+    }
+
+    &__title {
+        white-space: nowrap;
+        margin-top: 119px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 85px;
+        color: $primary;
+        position: relative;
+        z-index: 5;
+    }
+
+    &__subtitle {
+        position: relative;
+        z-index: 5;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 36px;
+        color: #5A5A5A;
+        margin-top: 15px;
+        margin-bottom: 60px;
+        max-width: 356px;
+    }
+
+    &__info {}
+}
+
+
+.info-prof {
+    height: 301px;
+    margin-left: calc(-50vw + 50%);
+    width: 100vw;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+    position: relative;
+
+    &__items {
+        padding-top: 27px;
+
+        p {
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            color: $black;
+            margin-bottom: 15px;
+        }
+
+        img {
+            margin-right: 13px;
+        }
+    }
+
+    &__bg {
+        top: -37%;
+        right: 30px;
+        position: absolute;
+        z-index: 2;
+    }
+
+    &__btn {
+        position: relative;
+        z-index: 3;
+        margin-top: auto;
+        margin-bottom: -51px;
+        background: #80C2FF;
+        border-radius: 80px;
+        font-weight: 500;
+        font-size: 29.5px;
+        line-height: 42px;
+        text-align: center;
+        display: block;
+        color: $white;
+        padding: 21.1px;
+    }
+}
+
+.icon__ball-blue {
+    position: absolute;
+    left: 338px;
+    top: -176px;
+}
+.icon__ball-blue-strong{
+    position: absolute;
+    top: 260px;
+}

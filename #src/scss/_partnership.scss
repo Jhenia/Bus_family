@@ -1,0 +1,103 @@
+.partnership {
+    &__container {
+        position: relative;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &__wrappper {
+        display: flex;
+    }
+
+    &__bg {}
+
+    &__form {
+        max-width: 539px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 160px;
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 60px;
+        color: $primary;
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #5A5A5A;
+        margin-top: 22px;
+    }
+
+    &__form-date {}
+}
+
+
+.form-date {
+    &__btn {
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 31px;
+        text-align: center;
+        color: #001D5F;
+        padding: 15.4px;
+        background: #DDB12C;
+        border-radius: 80px;
+        margin-top: 52px;
+        display: block;
+        max-width: 212px;
+    }
+
+    &__select {
+        cursor: pointer;
+        padding-bottom: 5px;
+        position: relative;
+        appearance: none;
+        background: url('../img/arrow-down-select.svg');
+        background-repeat: no-repeat;
+        background-position: right;
+        display: block;
+        max-width: 500px;
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 36px;
+        color: #5A5A5A;
+        outline: none;
+        border: none;
+        border-bottom: 2px solid $black;
+
+
+    }
+
+    &__select-wrapper-title {
+        margin-bottom: 13px;
+        margin-top: 33px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 36px;
+        color: $black;
+
+    }
+
+    &__item {
+        border-bottom: 2px solid #000000 !important;
+        border: none;
+        max-width: 500px;
+        width: 100%;
+        outline: none;
+        margin-top: 84px;
+    }
+
+}
+.icon__ball-light-blur-partnership{
+    position: absolute;
+    right: 0;
+    top: 180px;
+}

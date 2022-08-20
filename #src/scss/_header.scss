@@ -1,0 +1,272 @@
+//--Header styles--//
+.navbar {
+    display: block;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    height: 69px;
+
+    &__logo {
+        width: 220px;
+
+        a {
+            display: flex;
+            align-items: center;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            color: $primary;
+
+            img {
+                margin-left: 5px;
+            }
+        }
+
+    }
+
+    &__body {
+        justify-content: space-between;
+        margin-top: 27px;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .menu {
+        margin-left: auto;
+
+
+        &__item {
+            a {
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                color: $primary;
+                text-transform: uppercase;
+            }
+
+            &.with__submenu {
+                position: relative;
+
+            }
+        }
+
+    }
+
+    @media (max-width:$breakpoint992) {
+        height: 50px;
+
+        .navbar {
+            padding: 0;
+            justify-content: space-between;
+        }
+
+        .burger {
+            z-index: 10;
+            display: block;
+            position: relative;
+            width: 30px;
+            height: 20px;
+
+            &:before,
+            &:after {
+                transition: all 0.3s ease;
+                content: '';
+                background-color: $black;
+                position: absolute;
+                width: 100%;
+                height: 2px;
+                left: 0;
+            }
+
+            &:before {
+                top: 1px;
+            }
+
+            &:after {
+                bottom: 0px;
+            }
+
+            & span {
+                position: absolute;
+                background-color: $black;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                top: 9px;
+                transition: all 0.3s ease;
+            }
+
+        }
+
+        .burger.active {
+            &:before {
+                transform: rotate(45deg);
+                top: 9px;
+                background-color: $secondary;
+            }
+
+            &:after {
+                transform: rotate(-45deg);
+                bottom: 9px;
+                background-color: $secondary;
+            }
+
+            span {
+                transform: scale(0);
+            }
+        }
+    }
+
+    .partnership {
+        display: inline;
+
+        a {
+            background: #DDB12C;
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+            border-radius: 80px;
+            padding: 10px;
+        }
+    }
+
+    .header__menu {
+
+        @media (max-width:$breakpoint992) {
+            transition: all 0.3s ease;
+            left: 100%;
+            padding-top: 50px;
+            z-index: 7;
+            position: fixed;
+            flex-direction: column;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $white;
+
+            ul {
+
+
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+
+
+            }
+
+            &.active {
+
+                left: 0;
+            }
+        }
+
+        display: flex;
+        justify-content: end;
+        width: 100%;
+
+
+        ul {
+            @media (max-width:$breakpoint992) {
+                flex: 1;
+                gap: 10px;
+                margin-left: 0;
+            }
+
+            z-index: 12;
+            position: relative;
+            display: flex;
+            gap: 60px;
+
+            @media (max-width:$breakpoint1450) {
+                gap: 55px;
+                margin-left: 40px;
+            }
+        }
+    }
+
+    .burger {
+        display: none;
+    }
+
+}
+
+header {
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        z-index: 8;
+        display: none;
+
+        @media (max-width:$breakpoint768) {
+            display: block;
+        }
+    }
+
+}
+
+.nav {
+    width: 480px !important;
+    position: relative;
+    cursor: pointer;
+
+
+}
+
+.club__submenu {
+    overflow: hidden;
+    height: 0px;
+    transform: translateY(10px);
+    position: absolute;
+    transition: 0.3s ease;
+    position: absolute;
+    min-width: 125px !important;
+    background: $primary;
+
+    ul {
+        max-width: 125px !important;
+        display: flex;
+        flex-direction: column;
+        gap: 0px !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+
+        li {
+            padding-top: 10px;
+
+            a {
+                width: 100% !important;
+                display: block !important;
+                font-weight: 400 !important;
+                text-transform: capitalize !important;
+                font-size: 10px !important;
+                line-height: 30px !important;
+                text-align: center !important;
+                color: #FFFFFF !important;
+            }
+        }
+    }
+}
+
+.active + .club__submenu {
+
+    transition: 0.3s ease;
+    height: 125px !important;
+}
+.submenu1{
+    position: absolute;
+    left: -40px;
+}
+
+//--Header styles--//

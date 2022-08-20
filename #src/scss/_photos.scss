@@ -1,0 +1,109 @@
+.photos {
+    padding-top: 150px;
+    &__wrapper {
+        padding-bottom: 225px;
+        max-width: 1215px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 30px 26px;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    &__img {
+
+        border-radius: 15.1064px;
+
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    &__date {
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13.5957px;
+        line-height: 27px;
+        color: $black;
+        margin-top: 26px;
+
+    }
+
+    &__names {
+        text-align: center;
+        font-weight: 500;
+        font-size: 13.5957px;
+        line-height: 27px;
+        color: $black;
+        margin-top: 5px;
+    }
+
+    &__theme {
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 12.0851px;
+        line-height: 20px;
+        color: #5A5A5A;
+        margin-top: 6px;
+    }
+
+    &__info {}
+
+    .info-line {
+        background-position-y: center !important;
+        background-position-x: 105% !important;
+        background-repeat: no-repeat !important;
+        background: url(../img/photos_bg-line.png);
+        background-color: #001D5F;
+        height: 189px;
+        &__wrapper{
+            display: flex;
+            align-items: center;
+        }
+        &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 46px;
+            color: $white;
+            max-width: 420px;
+            padding-top: 26px;
+        }
+
+        &__subtitle {
+            margin: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 36px;
+            color: $white;
+        }
+
+        &__mail {
+            display: flex;
+            margin-top: 110px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            color: $white;
+            background: #00ffff00;
+                border: 1px solid #FFFFFF;
+                box-shadow: 0px 0px 50px 2px rgb(255 255 255 / 35%);
+                border-radius: 80px;
+                padding: 10px 26px 10px 41px;
+            img{
+                margin-left: 70px;
+            }
+        }
+    }
+
+}
